@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ElectroWord</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>ElectroWord</h1>
+      <p class="subtitle">Fuerzas eléctricas, electrostática y magnetismo</p>
+      <p class="grade">Ciencias Naturales 6°</p>
+    </header>
+    <section id="intro" class="intro">
+      <div class="intro-card">
+        <h2>ElectroWord</h2>
+        <p class="intro-text">Ordena las letras para formar la palabra relacionada con fuerzas eléctricas, electrostática y magnetismo. Usa la pista de arriba. Los colores te guían: verde correcto, amarillo presente en otra posición, gris no pertenece. Tienes 5 intentos por reto.</p>
+        <div class="intro-actions">
+          <button id="startBtn">A jugar</button>
+        </div>
+      </div>
+    </section>
+    <main class="game hidden">
+      <section class="hint" id="hint"></section>
+      <section class="slots" id="slots"></section>
+      <section class="letters" id="letters"></section>
+      <section class="controls">
+        <div class="status">
+          <span id="level"></span>
+          <span id="attempts"></span>
+        </div>
+        <div class="buttons">
+          <button id="clearBtn">Borrar</button>
+          <button id="checkBtn">Comprobar</button>
+          <button id="nextBtn" class="hidden">Siguiente</button>
+        </div>
+      </section>
+      <section class="message" id="message"></section>
+      <section class="explanation" id="explanation"></section>
+    </main>
+  </div>
+  <div id="final" class="final hidden">
+    <div class="final-card">
+      <h2>¡Felicitaciones!</h2>
+      <p>Has completado ElectroWord. ¡Excelente trabajo, estudiantes!</p>
+      <div class="final-actions">
+        <button id="restartBtn">Volver a jugar</button>
+      </div>
+      <div class="confetti" id="confetti"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
